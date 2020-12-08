@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#temp {
+    background: #0f3460;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px;
+}
+
+.search, 
+.weatherIcon, 
+.tempNumber,
+.tempName, 
+.date, .locationText {
+    display: flex;
+}
+
+.search {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#citySearch {
+    padding: 8px;
+    border: none;
+    background: rgba(0, 0, 0, .5);
+}
+
+.weatherIcon, 
+.tempNumber,
+.tempName,
+.date, .locationText {
+    justify-content: center;
+}
+
+.tempNumber h2 {
+    font-size: 6em;
+}
+
+.tempNumber span {
+    font-size: .5em;
+    font-weight: 100;
+}
+
+.tempName p {
+    font-size: 2em;
+}
+
+.date span {
+    margin: 0 6px;
+}
+
+#details {
+    background: #16213e;
+    flex: 3;
+}
+
+.tempToggle {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 100px 20px 40px;
+}
+
+.tempToggle p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    background: #e5e5e573;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 100px;
+}
+
+.day {
+    background: #0f3460;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.day img {
+    width: 50%;
+}
+
+.minmax {
+    display: flex;
+    margin: 10px 0;
+}
+
+.minmax p {
+    margin: 10px 5px 0 5px;
+    font-size: .9em;
+}
+
+.today {
+    padding: 0 100px;
+}
+
+.today h2 {
+    margin: 25px 0;
+}
+
+.highlightsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.highlight {
+    background: #0f3460;
+    padding: 20px;
+}
+
+.highlight p:nth-of-type(2) {
+    font-size: 4em;
+}
+
+.highlightsContainer span {
+    font-size: 2rem;
+}
