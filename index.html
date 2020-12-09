@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather</title>
 </head>
 <body>
     <section id="temp">
-        <div class="search">
-            <input type="text" placeholder="Search for cities" id="citySearch">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
+        <form action="">
+            <div class="search">
+                <input type="text" placeholder="Search for cities" id="citySearch">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </form>
 
         <div class="weatherIcon">
             <img src="./weather-app-master/HeavyCloud.png" alt="heavy cloud">
         </div>
 
         <div class="tempNumber">
-            <h2>12 <span>C</span></h2>
+            <h2>12</h2><span>F</span>
         </div>
 
         <div class="tempName">
@@ -27,7 +30,7 @@
         </div>
 
         <div class="date">
-            <p>Today</p><span> ~ </span><p>Tue, 8 Dec</p>
+            <p>Today</p><span> ~ </span><p id="currentDay"></p>
         </div>
 
         <div class="locationText">
@@ -43,7 +46,7 @@
 
         <div class="weekdays">
             <div class="day">
-                <p>Tomorrow</p>
+                <p class="dayTitle">Tomorrow</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -51,7 +54,7 @@
                 </div>
             </div>
             <div class="day">
-                <p>Thu, dec 10</p>
+                <p class="dayTitle">Thu, dec 10</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -59,7 +62,7 @@
                 </div>
             </div>
             <div class="day">
-                <p>Fri, dec 11</p>
+                <p class="dayTitle">Fri, dec 11</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -67,7 +70,7 @@
                 </div>
             </div>
             <div class="day">
-                <p>Sat, dec 12</p>
+                <p class="dayTitle">Sat, dec 12</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <div class="day">
-                <p>Sun, dec 13</p>
+                <p class="dayTitle">Sun, dec 13</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -83,7 +86,7 @@
                 </div>
             </div>
             <div class="day">
-                <p>Mon, dec 14</p>
+                <p class="dayTitle">Mon, dec 14</p>
                 <img src="./weather-app-master/HeavyRain.png" alt="">
                 <div class="minmax">
                     <p>16 C</p>
@@ -98,23 +101,23 @@
             <div class="highlightsContainer">
                 <div class="wind highlight">
                     <p>Wind</p>
-                    <p>7 <span>mph</span></p>
+                    <p id="windNumber">7</p>
                 </div>
 
                 <div class="humidity highlight">
                     <p>Humidity</p>
-                    <p>84%</p>
+                    <p id="humidityPer">84%</p>
                     <div class="slider"></div>
                 </div>
 
                 <div class="visibility highlight">
                     <p>Visibility</p>
-                    <p>6,4 <span>miles</span></p>
+                    <p id="visibleText">6,4</p>
                 </div>
 
                 <div class="airPressure highlight">
                     <p>Air pressure</p>
-                    <p>998 <span>mb</span></p>
+                    <p id="airPressureNum">998</p>
                 </div>
             </div>
         </div>

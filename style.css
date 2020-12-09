@@ -53,8 +53,7 @@ body {
 }
 
 .tempNumber span {
-    font-size: .5em;
-    font-weight: 100;
+    font-size: 1.5em;
 }
 
 .tempName p {
