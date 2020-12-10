@@ -39,6 +39,7 @@ body {
     padding: 8px;
     border: none;
     background: rgba(0, 0, 0, .5);
+    color: #fff;
 }
 
 .weatherIcon, 
@@ -69,6 +70,10 @@ body {
     flex: 3;
 }
 
+.tempToggle .active {
+    background: #e5e5e573;
+}
+
 .tempToggle {
     display: flex;
     justify-content: flex-end;
@@ -80,10 +85,15 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-    background: #e5e5e573;
+    background: #e5e5e510;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.tempToggle p:hover {
+    background: #e5e5e573;
 }
 
 .weekdays {

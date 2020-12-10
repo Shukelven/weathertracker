@@ -10,19 +10,19 @@
 </head>
 <body>
     <section id="temp">
-        <form action="">
+        <form action="" id="searchForm">
             <div class="search">
-                <input type="text" placeholder="Search for cities" id="citySearch">
+                <input type="text" placeholder="Search for cities" id="citySearch" autocomplete="off">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
         </form>
 
         <div class="weatherIcon">
-            <img src="./weather-app-master/HeavyCloud.png" alt="heavy cloud">
+            <img src="http://openweathermap.org/img/w/10d.png" alt="heavy cloud">
         </div>
 
         <div class="tempNumber">
-            <h2>12</h2><span>F</span>
+            <h2>12</h2><span class="unitText">°C</span>
         </div>
 
         <div class="tempName">
@@ -40,7 +40,7 @@
 
     <section id="details">
         <div class="tempToggle">
-            <p id="celsius">C</p>
+            <p id="celsius" class="active">C</p>
             <p id="fahrenheit">F</p>
         </div>
 
@@ -101,7 +101,7 @@
             <div class="highlightsContainer">
                 <div class="wind highlight">
                     <p>Wind</p>
-                    <p id="windNumber">7</p>
+                    <p id="windNumber">7 <span class="windUnit"></span></p>
                 </div>
 
                 <div class="humidity highlight">
